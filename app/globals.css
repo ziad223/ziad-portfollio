@@ -1,0 +1,93 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  overflow-x: hidden !important;
+}
+::-webkit-scrollbar{
+  background-color: #eee;
+}
+::-webkit-scrollbar-thumb{
+  background-color: rgb(208, 14, 14);
+}
+
+.hero{
+  background: linear-gradient(rgba(0 , 0 , 0 , 0.7) , rgba(0 , 0 , 0 , 0.7)) ,url(../public/images/bg.webp);
+  height: 90vh !important;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.hero-left > * {
+  margin-bottom: 20px;
+}
+.Typewriter{
+  font-size: 30px;
+  font-weight: bold;
+}
+.container{
+  width: 90%;
+  margin: 100px auto;
+}
+html{
+  scroll-behavior: smooth;
+}
+
+@media screen and (max-width : 768px){
+   .nav{
+    position: relative;
+   }
+   .nav-links{
+    position: absolute;
+    background-color: brown;
+    width: 300px;
+    padding: 20px;
+    top: 77px;
+    right: -300px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    transition: 1s;
+   }
+   .nav-links.open{
+    right: 0;
+   }
+   .nav-links a{
+    color: #fff;
+   }
+   .hero-left{
+    text-align: center;
+   }
+   .buttons{
+    flex-direction: column !important;
+     justify-content: center !important;
+   }
+   .a{
+    margin: 0px auto !important;
+    display: block !important;
+    width: 200px;
+   }
+   .buttons button{
+    width: 200px !important;
+   }
+   .about-content{
+    flex-direction: column;
+   }
+   .about-left{
+    width: 100%;
+    text-align: center;
+   }
+   .about-right{
+    margin-top: 50px;
+    width: 100%;
+   }
+   .box{
+    flex-direction: column;
+   }
+   .box div{
+    width: 100%;
+   }
+}
+
